@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Multi-App Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app-container">
+    <div class="window" id="hik-connect">
+      <header class="window-header">
+        <span>Hik-Connect</span>
+        <button onclick="closeWindow('hik-connect')">✕</button>
+      </header>
+      <iframe src="https://www.hik-connect.com/" width="100%" height="100%"></iframe>
+    </div>
+    <div class="window" id="phone-call">
+      <header class="window-header">
+        <span>Phone Dialer</span>
+        <button onclick="closeWindow('phone-call')">✕</button>
+      </header>
+      <button onclick="dialNumber()">Call Number</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
